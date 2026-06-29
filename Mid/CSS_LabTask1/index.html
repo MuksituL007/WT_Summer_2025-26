@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Service Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Service Portal</h1>
+    <p>Submit your service requests quickly and easily.</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="row">
+
+    <div class="left-content">
+        <h3>Quick Links</h3>
+        <p>Home</p>
+        <p>Services</p>
+        <p>Contact Us</p>
+        <p>FAQ</p>
+    </div>
+
+    <div class="main-content">
+
+        <h2>Available Services</h2>
+
+        <p>Our student affairs department offers the following services:</p>
+
+        <ul>
+            <li>Transcript Requests</li>
+            <li>ID Card Issues</li>
+            <li>General Inquiries</li>
+        </ul>
+
+        <h2>Submit a Service Request</h2>
+
+        <form>
+
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label for="studentID">Student ID:</label>
+            <input type="text" id="studentID" name="studentID" maxlength="10" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="serviceType">Service Type:</label>
+
+            <select id="serviceType" name="serviceType">
+                <option value="">Select Service</option>
+                <option value="transcript">Transcript Request</option>
+                <option value="idcard">ID Card Issue</option>
+                <option value="inquiry">General Inquiry</option>
+            </select>
+
+            <label>Urgency Level:</label>
+
+            <div class="radio-group">
+                <input type="radio" id="low" name="urgency" value="low">
+                <label for="low">Low</label>
+
+                <input type="radio" id="medium" name="urgency" value="medium">
+                <label for="medium">Medium</label>
+
+                <input type="radio" id="high" name="urgency" value="high">
+                <label for="high">High</label>
+            </div>
+
+            <label for="details">Additional Details:</label>
+
+            <textarea id="details" name="details" rows="5"></textarea>
+
+            <button type="submit">Submit Request</button>
+
+        </form>
+
+    </div>
+
+    <div class="right-content">
+        <h3>Notice</h3>
+        <p>Office hours: 9am - 5pm</p>
+        <p>Sunday to Thursday</p>
+
+        <h3>Contact</h3>
+        <p>affairs@university.edu</p>
+        <p>+880 1700-000000</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 University Student Affairs Department. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
